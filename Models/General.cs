@@ -12,7 +12,7 @@ namespace PruebaSithec.Models
         public static Conexion Conectar()
         {
             //return new Conexion("ProductosRamiro", "LAPTOP-6VNF4VTV\\SQLEXPRESS", "Pruebas", "1234");
-            return new Conexion("PruebaSithec", "LAPTOP-6VNF4VTV\\SQLEXPRESS", "Pruebas", "1234");
+            return new Conexion("Comercio", "207.210.232.61", "comer155_db", "0sc@r_210697");
 
         }
 

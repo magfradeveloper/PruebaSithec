@@ -13,6 +13,31 @@ namespace PruebaSithec.Controllers
     [ApiController]
     public class HumanoController : ControllerBase
     {
+        [HttpGet]
+        [Route("regresaHumanos")]
+
+        public List<Humano> regresaHumanos() {
+            List<Humano> hum=new List<Humano>();
+            hum.Add(new Humano { nombre = "Ricardo Zambrano", edad=15, sexo='M', altura=1.67M, peso = 58.90M });
+            hum.Add(new Humano { nombre = "Alejandra Sotomayor", edad = 27, sexo = 'F', altura = 1.72M, peso = 65.9M });
+            hum.Add(new Humano { nombre = "Miguel Herrera", edad = 50, sexo = 'M', altura = 1.60M, peso = 88.90M });
+            hum.Add(new Humano { nombre = "Karla López", edad = 35, sexo = 'F', altura = 1.67M, peso = 76.90M });
+            return hum;
+        }
+
+        [HttpPost]
+        [Route("migracion")]
+        public IActionResult migracion(List<Humano> humano) {
+            string sql = "";
+            foreach (var hum in humano) {
+                sql = $"insert into Humano(nombre, sexo, edad, altura, peso) values('{hum.nombre}', '{hum.sexo}', {hum.edad}, {hum.altura}, {hum.peso})";
+                if (!General.Conectar().ModRegEli(sql))
+                    return StatusCode(400);
+            }
+            return StatusCode(200);
+
+        }
+
         [HttpPost]
         [Route("nuevoHumano")]
 

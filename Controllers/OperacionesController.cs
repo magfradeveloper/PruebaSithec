@@ -40,5 +40,35 @@ namespace PruebaSithec.Controllers
             }
             return res;
         }
+
+        [HttpGet]
+        [Route("operacionHeaders")]
+
+        public Resultado operacionHeaders([FromHeader] Operaciones op) {
+            Resultado res = new Resultado();
+            switch (op.tipoOperacion)
+            {
+                case 1:
+                    res.operacion = "Suma";
+                    res.resultado = op.op1 + op.op2;
+                    break;
+
+                case 2:
+                    res.operacion = "Resta";
+                    res.resultado = op.op1 - op.op2;
+                    break;
+
+                case 3:
+                    res.operacion = "Multiplicacion";
+                    res.resultado = op.op1 * op.op2;
+                    break;
+
+                case 4:
+                    res.operacion = "División";
+                    res.resultado = op.op1 / op.op2;
+                    break;
+            }
+            return res;
+        }
     }
 }
