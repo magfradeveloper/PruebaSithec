@@ -1,0 +1,341 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DarkSoft
+</name>
+</assembly>
+<members>
+<member name="T:DarkSoft.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:DarkSoft.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:DarkSoft.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.#ctor(MySql.Data.MySqlClient.MySqlConnection@)">
+ <summary>
+ Constructor Para SQL Server Express
+ </summary>
+ <param name="Conexion"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.#ctor(System.String,System.String,System.String,System.String,System.Int32)">
+ <summary>
+ Constructor Para SQL Server
+ </summary>
+ <param name="BD">Nombre De La Base De Datos</param>
+ <param name="Ip">Nombre Del Servidor o Su IP</param>
+ <param name="Usu">Usuario Para La Conexion</param>
+ <param name="Pas">Clave Del Usuario Para La Conexion</param>
+ <param name="Puerto">Numero De Puerto De La Conexion</param>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.AsignarCadCon">
+ <summary>
+ Procedimiento Que Asigna La Cadena De Conexion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.Conectar">
+ <summary>
+ Procedimiento Que Conecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.Desconectar">
+ <summary>
+ Procedimiento Que Desconecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.Verificar">
+ <summary>
+ Verifica La Conexion Con La Base De Datos. Retorna True Si Es Correcta o False Sino
+ </summary>
+ <returns><c>True</c> Si La Conexion Se Establece y <c>False</c>Si No Puede</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.ConsultarDS(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataSet Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataSet</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.ConsultarDT(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataTable Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.PrimerTabla(System.Data.DataSet@)">
+ <summary>
+ Funcion Que Retorna La Primera Tabla De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra La Primer Tabla</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.PrimeraFila(System.Data.DataSet@)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.PrimeraFila(System.Data.DataTable@)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataTable
+ </summary>
+ <param name="Dt">DataTable Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.ConsultarDR(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataReader Con La Consulta
+ </summary>
+ <param name="Consulta ">Consulta A Retornar</param>
+ <returns>Retorna Un DataReader</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.ModRegEli(System.String,System.Int32)">
+ <summary>
+ Funcion Que Modifica, Registra o Elimina y Retorna True Si Se Completo La Operacion o False Sino
+ </summary>
+ <param name="Consulta">Consulta A Ejecutar</param>
+ <returns><c>True</c> Si Se Completa o <c>False</c>Sino</returns>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.Tablas">
+ <summary>
+ Funcion Que Retorna Las Tablas Que Contiene La Base De Datos
+ </summary>
+ <returns>Retorna Las Tablas Que Contiene La Base De Datos</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.MySQL.Conexion.Finalize">
+ <summary>
+ Procedimiento Que Se Ejecuta Al Finalizar La Clase
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.#ctor(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ Constructor Para SQL Server
+ </summary>
+ <param name="Conexion"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.#ctor(System.String,System.String,System.String,System.String)">
+ <summary>
+ Constructor Para SQL Server
+ </summary>
+ <param name="BD">Nombre De La Base De Datos</param>
+ <param name="Servidor">Nombre Del Servidor o Su IP</param>
+ <param name="Usuario">Usuario Para La Conexion</param>
+ <param name="Clave">Clave Del Usuario Para La Conexion</param>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.#ctor(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Constructor Para SQL Express
+ </summary>
+ <param name="Instancia">Nombre De La Instancia De SQL Express</param>
+ <param name="Archivo">Ruta Absoluta Del Archivo De Base De Datos</param>
+ <param name="BD">Nombre De La Base De Datos</param>
+ <param name="Data">Indica Que El Archivo Esta Dentro De La Ruta Data En La Ubicacion De La Aplicacion</param>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.AsignarCadCon">
+ <summary>
+ Procedimiento Que Asigna La Cadena De Conexion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.Conectar">
+ <summary>
+ Procedimiento Que Conecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.Desconectar">
+ <summary>
+ Procedimiento Que Desconecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.Verificar">
+ <summary>
+ Verifica La Conexion Con La Base De Datos. Retorna True Si Es Correcta o False Sino
+ </summary>
+ <returns><c>True</c> Si La Conexion Se Establece y <c>False</c>Si No Puede</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.ConsultarDS(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataSet Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataSet</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.ConsultarDT(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataTable Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.PrimerTabla(System.Data.DataSet)">
+ <summary>
+ Funcion Que Retorna La Primera Tabla De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra La Primer Tabla</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.PrimeraFila(System.Data.DataSet)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.PrimeraFila(System.Data.DataTable)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataTable
+ </summary>
+ <param name="Dt">DataTable Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.ConsultarDR(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataReader Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataReader</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.ModRegEli(System.String,System.Int32)">
+ <summary>
+ Funcion Que Modifica, Registra o Elimina y Retorna True Si Se Completo La Operacion o False Sino
+ </summary>
+ <param name="Consulta">Consulta A Ejecutar</param>
+ <returns><c>True</c> Si Se Completa o <c>False</c>Sino</returns>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.Tablas">
+ <summary>
+ Funcion Que Retorna Las Tablas Que Contiene La Base De Datos
+ </summary>
+ <returns>Retorna Las Tablas Que Contiene La Base De Datos</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQL.Conexion.Finalize">
+ <summary>
+ Procedimiento Que Se Ejecuta Al Finalizar La Clase
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.#ctor(System.Data.SQLite.SQLiteConnection@)">
+ <summary>
+ Constructor Para SQL Server
+ </summary>
+ <param name="Conexion"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.#ctor(System.String,System.String,System.Int32)">
+ <summary>
+ Constructor Para SQL Server
+ </summary>
+ <param name="Ruta">Ruta y Nombre De La Base De Datos</param>
+ <param name="Clave">Clave Del Usuario Para La Conexion</param>
+ <param name="MaxConexiones">Numero Maximo De Conexiones Permitidas</param>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.AsignarCadCon">
+ <summary>
+ Procedimiento Que Asigna La Cadena De Conexion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.Conectar">
+ <summary>
+ Procedimiento Que Conecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.Desconectar">
+ <summary>
+ Procedimiento Que Desconecta La Base De Datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.Verificar">
+ <summary>
+ Verifica La Conexion Con La Base De Datos. Retorna True Si Es Correcta o False Sino
+ </summary>
+ <returns><c>True</c> Si La Conexion Se Establece y <c>False</c>Si No Puede</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.ConsultarDS(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataSet Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataSet</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.ConsultarDT(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataTable Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.PrimerTabla(System.Data.DataSet)">
+ <summary>
+ Funcion Que Retorna La Primera Tabla De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra La Primer Tabla</param>
+ <returns>Retorna Un DataTable</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.PrimeraFila(System.Data.DataSet)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataSet
+ </summary>
+ <param name="Ds">DataSet Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.PrimeraFila(System.Data.DataTable)">
+ <summary>
+ Funcion Que Retorna El Primer Valor De La Primera Fila De Un DataTable
+ </summary>
+ <param name="Dt">DataTable Del Cual Se Obtendra El Primer Valor De La Primera Fila</param>
+ <returns>Retorna Un Object Con El Primer Valor</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.ConsultarDR(System.String,System.Int32)">
+ <summary>
+ Funcion Que Realiza Una Consulta Y Retorna Un DataReader Con La Consulta
+ </summary>
+ <param name="Consulta">Consulta A Retornar</param>
+ <returns>Retorna Un DataReader</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.ModRegEli(System.String,System.Int32)">
+ <summary>
+ Funcion Que Modifica, Registra o Elimina y Retorna True Si Se Completo La Operacion o False Sino
+ </summary>
+ <param name="Consulta">Consulta A Ejecutar</param>
+ <returns><c>True</c> Si Se Completa o <c>False</c>Sino</returns>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.Tablas">
+ <summary>
+ Funcion Que Retorna Las Tablas Que Contiene La Base De Datos
+ </summary>
+ <returns>Retorna Las Tablas Que Contiene La Base De Datos</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DarkSoft.SQLite.Conexion.Finalize">
+ <summary>
+ Procedimiento Que Se Ejecuta Al Finalizar La Clase
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
