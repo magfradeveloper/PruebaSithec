@@ -9,6 +9,11 @@ namespace PruebaSithec.Models
     {
         public int op1 { get; set; } = 0;
         public int op2 { get; set; } = 0;
-        public int tipoOperacion { get; set; } = 1;
+        public int tipoOperacion { get; set; } = 1; //1 - Suma; 2 - Resta; 3 - Multiplicacion; 4 - Division
+    }
+
+    public class Resultado {
+        public string operacion { get; set; } = "";
+        public decimal resultado { get; set; } = 0;
     }
 }
